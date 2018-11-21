@@ -1,6 +1,14 @@
 <h1>Super Donor</h1>
 <h3>Documentation POSTMAN https://documenter.getpostman.com/view/5475799/RzZFCwDB</h3>
-
+<p>RESTful API Aplikasi admin membuat event lalu user dapat mendaftar event tersebut </p>
+### Auth Token Menggunakan JWT
+## Cara Menggunakan
+### 1. Clone
+### 2.`composer install`
+### 3. Buat database `superdonor`
+### 4. Setting file `.env`
+### 5. `php artisan migrate`
+### 6. `php artisan serve`
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
 <p align="center">
