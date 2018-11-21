@@ -68,6 +68,8 @@ class PmiEventController extends Controller
             'tempat' => 'required'
         ]);
 
+
+        $judul = $request->input('judul');
         $tanggal = $request->input('tanggal');
         $penanggung_jawab = $request->input('penanggung_jawab');
         $deskripsi = $request->input('deskripsi');
@@ -75,6 +77,7 @@ class PmiEventController extends Controller
         $kota = $request->input('kota');
 
         $event = new Event([
+            'judul' => $judul,
             'tanggal' => $tanggal,
             'penanggung_jawab' => $penanggung_jawab,
             'deskripsi' => $deskripsi,
@@ -144,6 +147,7 @@ class PmiEventController extends Controller
             'tempat' => 'required',
         ]);
 
+        $judul = $request->input('judul');
         $tanggal = $request->input('tanggal');
         $penanggung_jawab = $request->input('penanggung_jawab');
         $deskripsi = $request->input('deskripsi');
@@ -151,11 +155,12 @@ class PmiEventController extends Controller
         $kota = $request->input('kota');    
 
         $event = [
+            'judul' => $judul,
             'tanggal' => $tanggal,
             'penanggung_jawab' => $penanggung_jawab,
             'deskripsi' => $deskripsi,
             'tempat' => $tempat,
-            'kotat' => $kota
+            'kota' => $kota
         ];
 
         $user = auth()->user();

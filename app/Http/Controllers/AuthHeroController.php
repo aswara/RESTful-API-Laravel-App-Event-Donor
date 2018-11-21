@@ -17,6 +17,14 @@ class AuthHeroController extends Controller
         Config::set('auth.providers.users.model', \App\Hero::class);
 	}
 
+    public function index()
+    {
+        $user = auth()->user()->get();
+
+        return response()->json($user, 201);
+    }
+
+
     public function store(Request $request)
     {
 
@@ -28,8 +36,6 @@ class AuthHeroController extends Controller
             'tanggal_lahir' => 'required',
             'alamat' => 'required',
             'kota' => 'required',
-            'foto' => 'required',
-            'telepon' => 'required',
     		'password' => 'required|min:5'
     	]);
 

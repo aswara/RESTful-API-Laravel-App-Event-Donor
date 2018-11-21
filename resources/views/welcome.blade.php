@@ -81,16 +81,13 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    RESTful API Aplikasi Membuat Event Donor Darah
                 </div>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://documenter.getpostman.com/view/5475799/RzZFCwDB">Documentation POSTMAN</a>
+                    <a href="https://github.com/aswara">GitHub</a>
+                    <a href="https://facebook.com/aswara">Facebook</a>
                 </div>
             </div>
         </div>

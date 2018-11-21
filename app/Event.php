@@ -8,7 +8,7 @@ class Event extends Model
 {
 
     protected $fillable = [
-        'tanggal', 'tempat', 'kota', 'penanggung_jawab', 'deskripsi', 'id_pmi',
+        'judul', 'tanggal', 'tempat', 'kota', 'penanggung_jawab', 'deskripsi', 'id_pmi',
     ];
 
     public function pmi()

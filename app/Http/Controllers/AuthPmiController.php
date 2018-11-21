@@ -19,8 +19,9 @@ class AuthPmiController extends Controller
 	}
 
     public function index(){
-        $user = auth()->user()->event()->get();
-        dd($user);
+        $user = auth()->user()->get();
+        
+        return response()->json($user, 201);
     }
 
     public function store(Request $request)
@@ -32,6 +33,7 @@ class AuthPmiController extends Controller
     		'password' => 'required|min:5'
     	]);
 
+        $username = $request->input('username');
     	$nama_cabang = $request->input('nama_cabang');
     	$telepon = $request->input('telepon');
     	$password = $request->input('password');

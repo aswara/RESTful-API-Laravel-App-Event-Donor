@@ -53,6 +53,10 @@ Route::group([
 			'uses' => 'AuthHeroController@signin'
 		]);
 
+		Route::get('user', [
+			'uses' => 'AuthHeroController@index'
+		]);
+
 		Route::post('event', [
 			'uses' => 'PesertaController@store'
 		]);
